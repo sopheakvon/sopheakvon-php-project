@@ -1,12 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+    require_once('partial/header.php');
+    require_once('partial/navbar.php');
+
+    if(isset($_GET['page'])){
+        if($_GET['page'] == 'home'){
+            require_once('pages/home.php');
+        }elseif($_GET['page'] == 'break'){
+            require_once('pages/breakfast.php');
+        }elseif($_GET['page'] == 'lunch'){
+            require_once('pages/lunch.php');
+        }elseif($_GET['page'] == 'dinner'){
+            require_once('pages/dinner.php');
+        }elseif($_GET['page'] == 'category'){
+            require_once('pages/category.php');
+        }elseif($_GET['page'] == 'user'){
+            require_once('pages/user.php');
+        }
+    }else{
+        require_once('pages/home.php');
+
+    }
+    require_once('partial/footer.php');
+?>
