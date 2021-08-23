@@ -1,7 +1,7 @@
 <div class="container p-3 mt-3">
 <?php require_once('inc/database.php'); ?>
     <div class=" p-4">
-        <a href="process/user/create_user_html.php" class="btn btn-primary"> Add User</a>
+        <a href="process/user/create_user_html.php" class="btn btn-primary"> Add User +</a>
     </div>
     <table class="table table-bordered">
         <tr>

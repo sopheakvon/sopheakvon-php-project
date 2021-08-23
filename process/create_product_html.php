@@ -5,8 +5,9 @@
 ?>
 <div class="container p-4">
     <?php require_once('../inc/database.php') ?>
-    
+
         <form action="create_product_model.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="page" value="<?=$_GET['page']?>" />
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="proname" name="proname">
             </div>

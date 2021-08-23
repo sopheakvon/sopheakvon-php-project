@@ -9,7 +9,7 @@
             <input type="text" class="form-control" placeholder="Username.." name="username">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Password.." name="password">
+            <input type="password" class="form-control" placeholder="Password.." name="password">
         </div>
         <div class="form-group">
             <input type="file" class="form-control-file border" name="image">

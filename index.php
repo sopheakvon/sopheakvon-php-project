@@ -15,6 +15,12 @@
             require_once('pages/category.php');
         }elseif($_GET['page'] == 'user'){
             require_once('pages/user.php');
+        }elseif($_GET['page'] == 'detail'){
+            require_once('pages/detail.php');
+        }elseif($_GET['page'] == 'login'){
+            require_once('pages/login.php');
+        }elseif($_GET['page'] == 'logout'){
+            require_once('pages/logout.php');
         }
     }else{
         require_once('pages/home.php');
